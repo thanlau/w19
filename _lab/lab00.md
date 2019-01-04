@@ -85,7 +85,7 @@ If there are any issues or questions, please post them on Piazza and include any
 
 ### Step 0c: Creating your Gradescope account
 
-I have manually added everyone (using your @umail.ucsb.edu accounts) currently enrolled in the course to the Gradescope system. You should have received an email from the Gradescope system asking you to create a password. Once you follow the instructions to set your password, you should have access to the autograding system. You should see "CMPSC 32" in your Fall 2018 Courses.
+I have manually added everyone (using your @umail.ucsb.edu accounts) currently enrolled in the course to the Gradescope system. You should have received an email from the Gradescope system asking you to create a password. Once you follow the instructions to set your password, you should have access to the autograding system. You should see "CMPSC 32" in your Winter 2019 Courses.
 
 The lab assignment "Lab00" should appear in your Gradescope dashboard in CMPSC 32. 
 
