@@ -56,7 +56,9 @@ exclude:
    - _exam/keep
    - _lectures/keep
    - _info/keep        
-
+include:
+   - _pages
+   
 timezone: America/Los_Angeles
 
 collections:
