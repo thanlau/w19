@@ -13,7 +13,7 @@ Goals
 By the time you have finished this lab, you should have demonstrated
 your ability to:
 
--   Join the Github Organization <https://github.com/ucsb-cs32-f18/>
+-   Join the Github Organization <https://github.com/ucsb-cs32-w19/>
 -   Use some basic Unix commands, and learn about new Unix commands
 -   Create a basic Makefile from scratch
 -   Do some simple C++ programming as review of C++ basics, and as
@@ -67,14 +67,14 @@ If you are working from your own computer at home or in your dorm, i.e. in not i
 
 ### Step 0b: Adding yourself to our GitHub organization
 
-We will be using github.com in this course. We have created an organization on github.com <https://github.com/ucsb-cs32-f18> where you can create repositories (repos) for your assignments in this course. You may be familiar with GitHub organizations from CS 16 and 24 if you took it with Prof. Mirza. The advantage of creating private repos under that organization is that the course staff (your instructors, TAs and mentors) will be able to see your code and provide you with help, without you having to do anything special.
+We will be using github.com in this course. We have created an organization on github.com <https://github.com/ucsb-cs32-w19> where you can create repositories (repos) for your assignments in this course. You may be familiar with GitHub organizations from CS 16 and 24 if you took it with Prof. Mirza. The advantage of creating private repos under that organization is that the course staff (your instructors, TAs and mentors) will be able to see your code and provide you with help, without you having to do anything special.
 
 To join this organization, you need to do four things.
 
 (1) If you don't already have a github.com account, create one on the "free" plan.
 (2) If you don't already have your @umail.ucsb.edu email address associated with your github.com account, go to "settings", add that email, and confirm that email address.
-(3) Visit <https://ucsb-cs-github-linker.herokuapp.com> and login with your github.com account. Click "Home", find this course, and click the "join course button". That will automatically send you an invitation to join the course organization. There is a link to the invitation for the GitHub organization for this course (<https://github.com/ucsb-cs32-f18>). 
-(4) Click on the invitation link and accept it. You can also go straight to <https://github.com/ucsb-cs32-f18> and accept the invitation there.
+(3) Visit <https://ucsb-cs-github-linker.herokuapp.com> and login with your github.com account. Click "Home", find this course, and click the "join course button". That will automatically send you an invitation to join the course organization. There is a link to the invitation for the GitHub organization for this course (<https://github.com/ucsb-cs32-w19>). 
+(4) Click on the invitation link and accept it. You can also go straight to <https://github.com/ucsb-cs32-w19> and accept the invitation there.
 
 If you are not familiar with git, I highly recommend learning this skill since this will be extremely valuable when collaborating on large software projects. More information on git can be found here: <https://ucsb-cs32.github.io/topics/git/>.
 
@@ -211,11 +211,11 @@ The first thing we should do is edit our Makefile using emacs or vim, or whateve
 
 On the first line of the file, put this, substituting your name (and that of your pair partner(s) if applicable, for YOUR NAME(S) HERE, as appropriate:
 
-    # Makefile for lab00, YOUR NAME(S) HERE, CS32, F18
+    # Makefile for lab00, YOUR NAME(S) HERE, CS32, W19
 
 Then, leave a blank line, and add the following two lines shown here, so that you end up with this as the first four lines of your Makefile:
 
-    # Makefile for lab00, YOUR NAME(S) HERE, CS32, F18
+    # Makefile for lab00, YOUR NAME(S) HERE, CS32, W19
 
     CXX=clang++
     # CXX=g++
@@ -278,7 +278,7 @@ Two important things:
 
 <!-- -->
 
-    # Makefile for lab00, YOUR NAME(S) HERE, CS32, F18
+    # Makefile for lab00, YOUR NAME(S) HERE, CS32, W19
 
     CXX=clang++
     # CXX=g++
@@ -357,7 +357,7 @@ output. Do that now. Notice it is different from before:
 \(5) Now, edit your helloWorld.cpp program, changing the program by
 adding a comment with your name(s) between the first two comments:
 
-    // helloWorld.cpp  R. Wang for UCSB CS32 F18
+    // helloWorld.cpp  R. Wang for UCSB CS32 W19
     // Edited by: YOUR NAME(S) HERE
     // minimal Hello World! program for testing Makefiles
 
@@ -407,12 +407,37 @@ executes the necessary commands in the order needed.
 That is why the result, when we make a change to helloWorld.cpp is that
 the rules are done in this order:
 
-| what we see |                            explanation |
-| -- | -- |
-|`-bash-4.2$ make helloWorld` |           we type `make helloWorld` to make the executable, and make constructs the dependency chain `helloWorld.cpp`→`helloWorld.o`→`helloWorld` |
-| `clang++ -c helloWorld.cpp`  |          From the dependency chain, this is the first thing that must be done. It must be done because helloWorld.cpp is "newer" than helloWorld.o. The command recompiles `helloWorld.cpp` into `helloWorld.o`—the `-c` flag indicates "compile only; do not link", so we get a helloWorld.o file as the result. |
-| `clang++ helloWorld.o -o helloWorld`  | This is the link step. It is done because NOW helloWorld.o, which is newly remade from the previous step, is NOW newer than the executable helloWorld. The command relinks the helloWorld.o code (the machine language version of ONLY the code from the helloWorld.cpp file) with the machine language versions of the code in the standard libaries (e.g. the code for the iostream library that provides cout, endl, among other things.) The result of this command is a new version of the executable file `helloWorld` |
- | `-bash-4.2$`                 |          The bash prompt indicates that the command is complete and the shell is ready for our next command.|
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-fymr{font-weight:bold;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-fymr">What we see</th>
+    <th class="tg-7btt">Explanation</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">-bash-4.2$ make helloWorld</td>
+    <td class="tg-0pky">we type `make helloWorld` to make the executable, and make constructs the dependency chain `helloWorld.cpp`→`helloWorld.o`→`helloWorld`</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">clang++ -c helloWorld.cpp</td>
+    <td class="tg-0pky">From the dependency chain, this is the first thing that must be done. It must be done because helloWorld.cpp is "newer" than helloWorld.o. The command recompiles `helloWorld.cpp` into `helloWorld.o`—the `-c` flag indicates "compile only; do not link", so we get a helloWorld.o file as the result.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">clang++ helloWorld.o -o helloWorld</td>
+    <td class="tg-0pky">This is the link step. It is done because NOW helloWorld.o, which is newly remade from the previous step, is NOW newer than the executable helloWorld. The command relinks the helloWorld.o code (the machine language version of ONLY the code from the helloWorld.cpp file) with the machine language versions of the code in the standard libaries (e.g. the code for the iostream library that provides cout, endl, among other things.) The result of this command is a new version of the executable file `helloWorld`</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">-bash-4.2$</td>
+    <td class="tg-0pky">The bash prompt indicates that the command is complete and the shell is ready for our next command.</td>
+  </tr>
+</table>
+<p></p>
 
 So what should you know from this for your exams? These items suggest
 a few of things you might be asked about.
@@ -535,48 +560,47 @@ between index and value. So, nothing too complicated.
 
 The code is in the following source files:
 
-```
-+-----------------------+-----------------------+-----------------------+
-| Filename              | Purpose               | Do I need             |
-|                       |                       | to modify             |
-|                       |                       | this file?            |
-+=======================+=======================+=======================+
-|                       | Function definitions  | YES                   |
-|                       | for five functions.   |                       |
-|   arrayFuncs.cpp      | Two are complete,     |                       |
-|                       | three are stubs       |                       |
-|                       | Your job in this      |                       |
-|                       | lab is to replace the |                       |
-|                       | stubs with working    |                       |
-|                       | code                  |                       |
-+-----------------------+-----------------------+-----------------------+
-|                       | function prototypes   | NO                    |
-|    arrayFuncs.h       | for five functions    |                       |
-|                       | defined in            |                       |
-|                       | arrayFuncs.cpp        |                       |
-+-----------------------+-----------------------+-----------------------+
-|                       | test cases for        | NO                    |
-|                       | functions defined in  |                       |
-|                       | arrayFuncs.cpp        |                       |
-|    lab00Test.cpp      | This is the only      |                       |
-|                       | file in this lab with |                       |
-|                       | a main()              |                       |
-|                       | function              |                       |
-|                       | (other than           |                       |
-|                       | helloWorld.cpp)       |                       |
-+-----------------------+-----------------------+-----------------------+
-|                       | definitions for       | NO                    |
-|                       | functions that        |                       |
-|     tddFuncs.cpp      | support test-driven   |                       |
-|                       | development:          |                       |
-|                       | assertEquals,         |                       |
-|                       | assertTrue, etc.      |                       |
-+-----------------------+-----------------------+-----------------------+
-|                       | function prototypes   | NO                    |
-|    tddFuncs.h         | for functions defined |                       |
-|                       | in tddFuncs.cpp       |                       |
-+-----------------------+-----------------------+-----------------------+
-```
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-7btt">Filename</th>
+    <th class="tg-amwm">Purpose</th>
+    <th class="tg-amwm">Do I need to modify this file?</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">arrayFuncs.cpp</td>
+    <td class="tg-0lax">Function definitions for five functions. Two are complete, three are stubs. Your job in this lab is to replace the stubs with working code.</td>
+    <td class="tg-baqh">YES</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">arrayFuncs.h</td>
+    <td class="tg-0lax">Function prototypes for five functions defined in arrayFuncs.cpp</td>
+    <td class="tg-baqh">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">lab00Test.cpp</td>
+    <td class="tg-0lax">Test cases for functions defined in arrayFuncs.cpp. This is the only file in this lab with a main() function (other than hellowWorld.cpp)</td>
+    <td class="tg-baqh">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">tddFuncs.cpp</td>
+    <td class="tg-0lax">Definitions for functions that support Test-Driven Development (TDD):<br>assertEquals, assertTrue, etc.</td>
+    <td class="tg-baqh">NO</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">tddFuncs.h</td>
+    <td class="tg-0lax">Function prototypes for functions defined in tddFuncs.cpp</td>
+    <td class="tg-baqh">NO</td>
+  </tr>
+</table>
 
 ### Step 4a: Adding a rule to link lab00Test
 
@@ -772,7 +796,7 @@ Grading Rubric
 ==============
 
 This lab is based entirely on the grade assigned by Gradescope. There
-WILL be labs this quarter where code style is assessed, but this is not
+may be labs this quarter where code style is assessed, but this is not
 one of those labs.
 
 Gradescope automated
@@ -785,4 +809,4 @@ Acknowledgements
 ================
 
 Some material in this lab is based on work originally written by Mike
-Costanzo and edited by Phill Conrad, and Richert Wang (F18). Other parts are original work of Phill Conrad.
+Costanzo and edited by Phill Conrad, and Richert Wang (W19). Other parts are original work of Phill Conrad.
