@@ -13,7 +13,7 @@ Basic Facts
 * **Lecture**: MW 09:30am-10:45am PSYCH 1924, ATTENDANCE REQUIRED.
 * **TAs**:  {{site.ta_list_full}} (contact via Piazza)
 * **Lab** (50 minute lab section): Wednesdays 1pm, 2pm, 3pm, 4pm - Phelps 3525, ATTENDANCE REQUIRED.                                         
-* **Office Hours**: Monday 11:00am - 12:00pm, TBD... in HFH 1151
+* **Office Hours**: Monday 11:00am - 12:00pm, Wednesday 12:30pm - 1:30pm in HFH 1151.
 
 # Required Resources
 
