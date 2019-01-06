@@ -5,33 +5,39 @@ title: CS32, Spring 2018, richert
 # {{site.course}}, {{site.quarter}}
 
 
-<div id="info" data-role="collapsible" data-collapsed="false">
-<h2>Course Information</h2>
-<ul>
-{% for item in site.info %}
-<li><a href="{{item.url}}"  data-ajax="false">{{item.title }}</a></li>
-{% endfor %}
-</ul>
-</div>
+<!-- info -->
+{% include collapse-card-begin.html label="Course Information" id="info" %}
+## Course Information
+{% include info_list.html %}
+{% include collapse-card-end.html %}
+<!-- end-info -->
 
-<div data-role="collapsible" data-collapsed="false">
-<h2 id="labs">Labs:</h2>
+<!-- labs -->
+{% include collapse-card-begin.html label="Labs" id="labs" %}
+## Labs
 {% include lab_table.html %}
-</div>
+{% include collapse-card-end.html %}
+<!-- end-labs -->
 
-
-<div data-role="collapsible" data-collapsed="false">
-<h2 id="homework">Homework:</h2>
+<!-- hwk -->
+{% include collapse-card-begin.html label="Homework" id="hwk" %}
+## Hwk
 {% include hwk_table.html %}
-</div>
+{% include collapse-card-end.html %}
+<!-- end-hwk -->
 
-<div data-role="collapsible" data-collapsed="false">
-<h2 id="exams">Exams</h2>
-{%include exam_table.html %}
-</div>
+<!-- exams -->
+{% include collapse-card-begin.html label="Homework" id="exams" %}
+## Exams
+{% include exam_table.html %}
+{% include collapse-card-end.html %}
+<!-- end-exams -->
 
-<div data-role="collapsible" data-collapsed="false">
-<h2 id="teams">Lectures</h2>
-{%include lectures_table.html %}
-</div>
+<!-- lectures -->
+{% include collapse-card-begin.html label="Homework" id="lectures" %}
+## Lectures
+{% include lectures_table.html %}
+{% include collapse-card-end.html %}
+<!-- end-lectures -->
+
 
