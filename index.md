@@ -27,14 +27,14 @@ title: CS32, Spring 2018, richert
 <!-- end-hwk -->
 
 <!-- exams -->
-{% include collapse-card-begin.html label="Homework" id="exams" %}
+{% include collapse-card-begin.html label="Exams" id="exams" %}
 ## Exams
 {% include exam_table.html %}
 {% include collapse-card-end.html %}
 <!-- end-exams -->
 
 <!-- lectures -->
-{% include collapse-card-begin.html label="Homework" id="lectures" %}
+{% include collapse-card-begin.html label="Lectures" id="lectures" %}
 ## Lectures
 {% include lectures_table.html %}
 {% include collapse-card-end.html %}
