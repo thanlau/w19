@@ -70,11 +70,11 @@ Your course grade will be determined as follows:
 
 | Grade Item                        | Percentage of Final Grade |
 |-----------------------------------|---------------------------|
-| Midterm 1 (Thurs. 4/26)           | 15 %                      |
-| Midterm 2 (Thurs. 5/24)           | 15 %                      | 
-| Final (Monday 6/11, 12pm - 3pm)   | 30 %                      |
+| Midterm 1 (Wed 1/30)              | 15 %                      |
+| Midterm 2 (Wed 2/27)              | 15 %                      |
+| Final (Wed 3/20 8am - 10am)       | 30 %                      |
 | Homeworks                         | 10 %                      |
-| labs                              | 30 %                      | 
+| labs                              | 30 %                      |
 
 In general, homeworks will be assigned periodically throughout the quarter, and are due in lecture on the due date.
 
