@@ -2,7 +2,7 @@
 num: "Lecture 1"
 desc: "Introduction, Compilation Review"
 ready: true
-date: 2019-01-07 09:30:00.00-7:00
+lecture_date: 2019-01-07 09:30:00.00-7:00
 ---
 
 # Course Syllabus
