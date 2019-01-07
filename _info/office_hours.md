@@ -9,7 +9,8 @@ ready: true
 # Instructor
 Richert Wang (HFH 1151)
 
-TBD
+* Mondays 11am - 12pm
+* Wednesdays 1:30pm - 2:30pm
 
 # TAs
 
