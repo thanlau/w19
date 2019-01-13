@@ -14,9 +14,23 @@ Richert Wang (HFH 1151)
 
 # TAs
 
-TBD
+Kevin Burk (Trailer 936 Room 103/104)
 
-# Mentors
+* Wednesdays 11am - 12pm
+* Thursdays 12:30pm - 1:30pm
 
-TBD
+Sirius Zhang
 
+* Wednesdays 2:30pm - 4:30pm
+
+# Mentor Open Lab Hours
+
+Eric Freilafert (Phelps 3526)
+
+* Tuesdays 7pm - 8pm
+* Fridays 1pm - 2pm
+
+Junayed Naushed (Phelps 3526)
+
+* Wednesdays 5pm - 6pm
+* Fridays 2pm - 3pm
