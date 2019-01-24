@@ -32,5 +32,5 @@ Eric Freilafert (Phelps 3526)
 
 Junayed Naushed (Phelps 3526)
 
-* Wednesdays 5pm - 6pm
+* Wednesdays 6pm - 7pm
 * Fridays 2pm - 3pm
