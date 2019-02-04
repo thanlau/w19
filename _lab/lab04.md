@@ -90,7 +90,7 @@ Hint: write stub code for each method, and get your class to compile. Then filli
 
 In planning your implementations, keep in mind the following requirements:
 <ul type="circle">
-  <li>Each of the functions put, get and remove must execute in constant O(1) time. That means your implementation must be a hash table. By the way, you should carefully choose the size of the table you create in the constructors - our version makes the size of the table equal to twice the maximum number of entries.</li>
+  <li>Each of the functions put, get and remove must execute in constant O(1) time in the average case. That means your implementation must be done using a hash table.</li>
   <li>Your output function must output the entries in the order of the key values, and it must execute in no more than O(n log n) time, and certainly not O(n<sup>2</sup>) time.</li></ul>
       
 <table border="1">
