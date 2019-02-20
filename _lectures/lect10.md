@@ -79,7 +79,7 @@ public:
 * <b>Destructors can (and most likely should) be virtual.</b>
     * If a Person pointer is pointing to a Student, we want to call the destructor for the Student as well. If not, there can be potential memory leaks.
 
-## Example of memory slicing and object slicing
+## Example of Object slicing
 
 ```
 Person p4 = Student("Person Student 2", 21, 0000000);
