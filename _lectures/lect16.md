@@ -53,12 +53,10 @@ Topics
 	- Differences
 	- Memory storage (hexadecimal notation)
 	- Syntax
+- Memory Padding
 - Namespaces
 	- Naming collisions (and how to avoid them)
 	- Global namespace
-- Binary Search
-	- Implement Algorithm (iteratively and recursively)
-	- Running time for various operations
 - Quadratic Sorting
 	- Bubblesort, selectionsort, insertionsort
 	- Optimizations
